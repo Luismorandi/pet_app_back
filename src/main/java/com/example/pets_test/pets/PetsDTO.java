@@ -9,7 +9,7 @@ public class PetsDTO {
     private String genre;
     private Integer age;
     private String breed;
-    private UUID ownerId;
+    private String ownerId;
     private String address;
     private String type;
 
@@ -43,7 +43,7 @@ public class PetsDTO {
         this.imageUrl = imageUrl;
     }
 
-    public PetsDTO(String name, String genre, Integer age, String breed, UUID ownerId, String address, String type, String description,String imageUrl) {
+    public PetsDTO(String name, String genre, Integer age, String breed, String ownerId, String address, String type, String description,String imageUrl) {
         this.name = name;
         this.genre = genre;
         this.age = age;
@@ -89,11 +89,11 @@ public class PetsDTO {
         this.breed = breed;
     }
 
-    public UUID getOwnerId() {
+    public String getOwnerId() {
         return ownerId;
     }
 
-    public void setOwnerId(UUID ownerId) {
+    public void setOwnerId(String ownerId) {
         this.ownerId = ownerId;
     }
 

@@ -27,7 +27,7 @@ public class Pets_entity {
     private String genre;
     private Integer age;
     private String breed;
-    private UUID ownerId;
+    private String ownerId;
     private String address;
     private String type;
 
@@ -41,7 +41,7 @@ public class Pets_entity {
     public Pets_entity(){
 
     }
-    public Pets_entity(UUID id, String name, String genre, Integer age, String breed, UUID ownerId, String address, String type, String description, String imageUrl, LocalDateTime createdAt, LocalDateTime updatedAt) {
+    public Pets_entity(UUID id, String name, String genre, Integer age, String breed, String ownerId, String address, String type, String description, String imageUrl, LocalDateTime createdAt, LocalDateTime updatedAt) {
         this.id = id;
         this.name = name;
         this.genre = genre;
@@ -56,7 +56,7 @@ public class Pets_entity {
         this.updatedAt = updatedAt;
     }
 
-    public Pets_entity(String name, String genre, Integer age, String breed, UUID ownerId, String address, String type, LocalDateTime createdAt, LocalDateTime updatedAt) {
+    public Pets_entity(String name, String genre, Integer age, String breed, String ownerId, String address, String type, LocalDateTime createdAt, LocalDateTime updatedAt) {
         this.name = name;
         this.genre = genre;
         this.age = age;
@@ -121,11 +121,11 @@ public class Pets_entity {
         this.breed = breed;
     }
 
-    public UUID getOwnerId() {
+    public String getOwnerId() {
         return ownerId;
     }
 
-    public void setOwnerId(UUID ownerId) {
+    public void setOwnerId(String ownerId) {
         this.ownerId = ownerId;
     }
 
