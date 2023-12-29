@@ -13,6 +13,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
 
+
 @Repository("typeOfPets")
 public interface TypesOfPets_jpa extends JpaRepository<TypesOfPets_entity, UUID> {
 
